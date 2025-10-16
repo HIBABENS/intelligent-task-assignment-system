@@ -4,7 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=165105000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=596341000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>28100</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -15,14 +15,14 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>incident_auto_assignment_flow</internal_name>
-        <label_cache>[{"name":"e9e77014-494a-4027-b5a6-03faefcd0d68.recommended_assignee.user_name","label":"1 - Find and Assign Best Assignee➛recommended_assignee➛User ID","reference":"","reference_display":"User ID","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"user_name","usedInstances":{}},{"name":"Created or Updated_1.current.sys_id","label":"Trigger - Record Created or Updated➛Incident Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1259673_intell_0_incident","column_name":"sys_id","choices":[{"order":0.0}],"usedInstances":{"e9e77014-494a-4027-b5a6-03faefcd0d68":["task_sys_id"]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Incident Record","reference":"x_1259673_intell_0_incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{"e9e77014-494a-4027-b5a6-03faefcd0d68":["task_sys_id","current_record"]},"attributes":{}},{"name":"e9e77014-494a-4027-b5a6-03faefcd0d68.recommended_assignee","label":"1 - Find and Assign Best Assignee➛recommended_assignee","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"cfbd1cc8-91ba-4ac7-a5db-156ef017dcda"}},{"name":"Created or Updated_1.current.number","label":"Trigger - Record Created or Updated➛Incident Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1259673_intell_0_incident","column_name":"number","usedInstances":{"800e290c-15da-4e19-9d1c-b0fd75012f93":["ah_message"]}},{"name":"e9e77014-494a-4027-b5a6-03faefcd0d68.recommended_assignee.first_name","label":"1 - Find and Assign Best Assignee➛recommended_assignee➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name","usedInstances":{}},{"name":"e9e77014-494a-4027-b5a6-03faefcd0d68.recommended_assignee.last_name","label":"1 - Find and Assign Best Assignee➛recommended_assignee➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"last_name","usedInstances":{}},{"name":"e9e77014-494a-4027-b5a6-03faefcd0d68.assignment_score","label":"1 - Find and Assign Best Assignee➛assignment_score","reference_display":"assignment_score","type":"integer","base_type":"integer","usedInstances":{"800e290c-15da-4e19-9d1c-b0fd75012f93":["ah_message"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"26f27bd3-9456-4ba1-9fd5-04b01ca518bc"}},{"name":"e9e77014-494a-4027-b5a6-03faefcd0d68.recommended_assignee.name","label":"1 - Find and Assign Best Assignee➛recommended_assignee➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name","usedInstances":{}},{"name":"e9e77014-494a-4027-b5a6-03faefcd0d68.recommended_assignee_name","label":"1 - Find and Assign Best Assignee➛recommended_assignee_name","type":"string","base_type":"string","usedInstances":{"800e290c-15da-4e19-9d1c-b0fd75012f93":["ah_message"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"c871da41-c1eb-4a23-9e1d-2ee4b1be2cae"}}]</label_cache>
+        <label_cache>[{"name":"e9e77014-494a-4027-b5a6-03faefcd0d68.recommended_assignee_name","label":"1 - Find and Assign Best Assignee➛recommended_assignee_name","reference_display":"recommended_assignee_name","type":"string","base_type":"string","usedInstances":{"800e290c-15da-4e19-9d1c-b0fd75012f93":["ah_message"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"c871da41-c1eb-4a23-9e1d-2ee4b1be2cae"}},{"name":"e9e77014-494a-4027-b5a6-03faefcd0d68.recommended_assignee.name","label":"1 - Find and Assign Best Assignee➛recommended_assignee➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name","usedInstances":{}},{"name":"e9e77014-494a-4027-b5a6-03faefcd0d68.assignment_score","label":"1 - Find and Assign Best Assignee➛assignment_score","reference_display":"assignment_score","type":"integer","base_type":"integer","usedInstances":{"800e290c-15da-4e19-9d1c-b0fd75012f93":["ah_message"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"26f27bd3-9456-4ba1-9fd5-04b01ca518bc"}},{"name":"e9e77014-494a-4027-b5a6-03faefcd0d68.recommended_assignee.last_name","label":"1 - Find and Assign Best Assignee➛recommended_assignee➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"last_name","usedInstances":{}},{"name":"e9e77014-494a-4027-b5a6-03faefcd0d68.recommended_assignee.first_name","label":"1 - Find and Assign Best Assignee➛recommended_assignee➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name","usedInstances":{}},{"name":"Created or Updated_1.current.number","label":"Trigger - Record Created or Updated➛Incident Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1259673_intell_0_incident","column_name":"number","usedInstances":{"800e290c-15da-4e19-9d1c-b0fd75012f93":["ah_message"]}},{"name":"e9e77014-494a-4027-b5a6-03faefcd0d68.recommended_assignee","label":"1 - Find and Assign Best Assignee➛recommended_assignee","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"cfbd1cc8-91ba-4ac7-a5db-156ef017dcda"}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Incident Record","reference":"x_1259673_intell_0_incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{"e9e77014-494a-4027-b5a6-03faefcd0d68":["task_sys_id","current_record"]},"attributes":{}},{"name":"Created or Updated_1.current.sys_id","label":"Trigger - Record Created or Updated➛Incident Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1259673_intell_0_incident","column_name":"sys_id","choices":[{"order":0.0}],"usedInstances":{"e9e77014-494a-4027-b5a6-03faefcd0d68":["task_sys_id"]}},{"name":"e9e77014-494a-4027-b5a6-03faefcd0d68.recommended_assignee.user_name","label":"1 - Find and Assign Best Assignee➛recommended_assignee➛User ID","reference":"","reference_display":"User ID","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"user_name","usedInstances":{}}]</label_cache>
         <master_snapshot>7f62cb7483243210a07896d6feaad37f</master_snapshot>
         <master_snapshot_digest/>
         <name>Incident Auto Assignment Flow</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
-        <remote_trigger_id>f557ac158360b210a07896d6feaad3e5</remote_trigger_id>
+        <remote_trigger_id>3f02de7283a03210a07896d6feaad386</remote_trigger_id>
         <run_as>user</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
@@ -36,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>108176a083e03210a07896d6feaad373</sys_id>
-        <sys_mod_count>60</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Incident Auto Assignment Flow</sys_name>
         <sys_overrides/>
         <sys_package display_value="Intelligent Task Assignment" source="x_1259673_intell_0">c568deec83203210a07896d6feaad304</sys_package>
@@ -44,11 +44,11 @@
         <sys_scope display_value="Intelligent Task Assignment">c568deec83203210a07896d6feaad304</sys_scope>
         <sys_update_name>sys_hub_flow_108176a083e03210a07896d6feaad373</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-11 13:36:50</sys_updated_on>
+        <sys_updated_on>2025-10-16 13:24:08</sys_updated_on>
         <type>flow</type>
         <updation_source/>
         <version>2</version>
-        <version_record display_value="Created 2025-10-11 06:36:50">0e57ec158360b210a07896d6feaad346</version_record>
+        <version_record display_value="Created 2025-10-16 06:24:08">2864d27683a03210a07896d6feaad312</version_record>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=108176a083e03210a07896d6feaad373"/>
     <sys_variable_value action="delete_multiple" query="document_key=108176a083e03210a07896d6feaad373"/>
@@ -68,15 +68,15 @@
         <run_when_user_setting>any</run_when_user_setting>
         <sys_class_name>sys_flow_record_trigger</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-10-11 13:36:49</sys_created_on>
+        <sys_created_on>2025-10-16 13:13:58</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>f557ac158360b210a07896d6feaad3e5</sys_id>
+        <sys_id>3f02de7283a03210a07896d6feaad386</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_overrides/>
         <sys_scope display_value="Intelligent Task Assignment">c568deec83203210a07896d6feaad304</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-11 13:36:49</sys_updated_on>
+        <sys_updated_on>2025-10-16 13:13:58</sys_updated_on>
         <table>x_1259673_intell_0_incident</table>
         <trigger_definition/>
     </sys_flow_record_trigger>
@@ -86,14 +86,14 @@
         <identifier>108176a083e03210a07896d6feaad373</identifier>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-10-11 13:36:49</sys_created_on>
-        <sys_id>bd57ac158360b210a07896d6feaad3e5</sys_id>
+        <sys_created_on>2025-10-16 13:24:06</sys_created_on>
+        <sys_id>8464927683a03210a07896d6feaad3bd</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-11 13:36:49</sys_updated_on>
-        <trigger display_value="">f557ac158360b210a07896d6feaad3e5</trigger>
+        <sys_updated_on>2025-10-16 13:24:06</sys_updated_on>
+        <trigger display_value="">3f02de7283a03210a07896d6feaad386</trigger>
     </sys_trigger_runner_mapping>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=108176a083e03210a07896d6feaad373^sys_idNOT INbd57ac158360b210a07896d6feaad3e5"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=108176a083e03210a07896d6feaad373^sys_idNOT IN8464927683a03210a07896d6feaad3bd"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=108176a083e03210a07896d6feaad373"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=108176a083e03210a07896d6feaad373^sys_idNOT IN148176a083e03210a07896d6feaad375"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -401,13 +401,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-09 16:26:58</sys_created_on>
         <sys_id>2a1bfe2083243210a07896d6feaad34c</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Intelligent Task Assignment">c568deec83203210a07896d6feaad304</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-11 14:04:15</sys_updated_on>
+        <sys_updated_on>2025-10-16 13:24:03</sys_updated_on>
         <ui_id>e9e77014-494a-4027-b5a6-03faefcd0d68</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/42S3W6jMBCFX6XyNUEQCPm5W6WKVKm7lbbb3lQVGuwhsWQMNXaaLMq77zigBHW72t7hM2fsM9/w0jEp2Iot41mZwDxaJNM0mcYRRPPFMhNZiQAiWc5ZwDRUSE7ujEFtc4O8NoL0PSjnC123NggWxU1tbp4a4T/zOBz8pxNZhWwbBcfnoYMUvpNKUJ2tXl4D1oChRywatuo+lL6aUkGB6rOY/4pvj43XDZZIBY6DdD/c83OkU4OPFgcMDxa1QMpUgmoxYBVoGrg2x4tCLMSDVldhJ7Xth67g0Mrf9GoyDUYPr9ghj6ezZTZPcvKiUnlEH1wKCsxGznzgSB1313J5CxYerXHcOnPBW0uObY9QYAlO2fVY6w0PjZW17lssFOr/WXitXKV/9EzZ5e7RZl1LObHxmPzcA4TycVe/X5hupD4THYqq5qBGVgTDdxuJyu9eu6ogb8DAWiMLZ/0IHXPy198L7MXPVogKK7/+CppG6m3emHovzxlopCrcKjqEparfKXsrtzoE7tGEtFwIN6TfnuVnMNJz+k7XnEM5+aTlm8O7829axDNepNkkzUQ8SdOST5YRHQWPShSwmKFAdgpYe2zXCtr2ipGGyN+ch9BDHfDl/XJ8Czeysd8o1B4HUqfXPxxeepLFAwAA</values>
+        <values>H4sIAAAAAAAA/41SXW+bMBT9K5WfCYJASMjbtKlSpW2VtrUvVWVd7EtiydjUmDRZlP++a6BptK7q3vC5H+eec3g4MiXZmpXpos5gmayyeZ7N0wSS5aosZFEjgMzKJYuYgQapU/TOofHcobBOEr4D3YfC8fjZIXiUV9Zd3bUyfPI0nvpPJ2qVqms1HO6nCULEVmlJdbZ+eIxYC45IPDq2Pv5V8ocWuYYKNQ3+wBqpIpA2/O/5L7Nv7n9PV2Ak3F1wUSHclkYM9x6NROKuQXcYsQYMKbbucEbIDHlr9CuwVcaPqhvYd+o3bc/m0QXBmu15Ol+UxTLj1Ita84Q+hJJ0GLvo5JORNHHzWhZbqwTetl5ZM/J4qPTHa4XVfWO+jzaElLCGXvuLlPqOKLENioOESU/9c2ufz1FcKzOYMxW1FaDPL/Deqar32IVke/Xrrbcj+PUfCaPGJiTTQNsqs+Gtszs1cNHpTbzR9IhrbZ/pxk5tTAwiWBBTHhBfE/5lgO/BqeDHN1pDw4HxzqinHm+GP6hKF6LKi1leyHSW57WYlQk9pUhqlLBaoER2GjLgT32QNlo1mcJHy6mhE061/hOdsMNJ/+nxD7KZTKpnAwAA</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=2a1bfe2083243210a07896d6feaad34c"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
@@ -425,13 +425,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-11 12:00:15</sys_created_on>
         <sys_id>9b311cd583ec7210a07896d6feaad3b3</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Intelligent Task Assignment">c568deec83203210a07896d6feaad304</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-11 14:04:15</sys_updated_on>
+        <sys_updated_on>2025-10-16 13:24:03</sys_updated_on>
         <ui_id>800e290c-15da-4e19-9d1c-b0fd75012f93</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1W227aQBD9FeS+tBIYg831LSGKlJI0UUIuUhpZw3qNrawv3V1DKPK/d9YXLg1CILUviDfv7M7OOWfPjPy60HxH62tOj4DhWqY5poZhGkarAxY0qWla1CUWtLSqFkJA8SR4tk+iEANTYImK4Kfji5jB/GkVIZ7PHE5Drf/6VtVi4JgtKdf6i7+29i3PYEwZHr3Ki39CI+exCgjJ/XBSrK+LnIcyGHFHYbCqGv2QNHQoFneBCVrVAggdkBGfLyOcgnMbslXA80OZswvgQ/i/sV7XMAx10qVIiBTcl0u70CUPuxcgAaEkRCZ8KVPkEypyKRzqQsLkYD2WH7iNpY8ssxQJY1ZmRywJwh+5FNrygrVnSASCoLGiqrAXRNwHL5rdlygv/TBTpdhkEQG2XIFE7caJVHgWGmU0wIvsAOIYFbVjHk39LBmxBPqE4UJ3WTTDosKfhDoQBVxHZUG/xPhFFn4C7isWN3gNJqdVTczFgIEQKy4oov0rUUhyZgUHO5dBpRDux/IMC0xpATetFna2Grv81HU3DIQa8Wz1Ty29B4TS0o8rAFtRHWLt5snax21tw9npK3PDRAEVAibrzr4Kia+KVRaLAbpAUqcS8cpj7KhPu6GThKNyUg+TYEx5mlYQOdLCYzKqYBLt0U7HaFg1q2dBzTKandq4Be2aYbqAABzDaXd1TlGyIDOhXeRTW6FK05/hV0EiTvv73pXnZ0+TJabpt8/deSSsDpswezihnDA3Sx9s88Yh86Vxmi/HPV+6rV2u6sGGh4gHYYg+Wc2XL74UwecGLcOHOXwPLKXDB0sk29Ad4nDz5PDjdjjZOTc77Q0PzejYi6J3O+HrLvekjEW/XldbQhcMyLuOHOv4zzZVz1MfGdb5y3Vr+HD5vX5u9IbPo4vmcNSpzyzZfbnjz8PBx2jSOXvy2rOpdwdbOuZ/lDis+/bQqey+51ylyuP99Q71DulC49SFx9mFb38A46+xFHMQAAA=</values>
+        <values>H4sIAAAAAAAA/+1WXW/aMBT9Kyh72SQIhoTPt36oUke3Vi39kLoquiQOieo4me1AO5T/vuuQQFkB8dBNaOItvva599xzj608zozQM/qG13OB+LZljSghFiGtDtjQpJZlU9+1oWVUDQ4RxZMQOKEbcwxMgKU6gp9eKBMGr3fLiBuEzBOUG/3Hp6qRgEC0osLoz/7YUq8JdRiMKEPgjRIhHyN8V1Il8HxO6R1HnR0DsswbC0+TsKsGfVGUexTr+MAkrRoRcA9ULF4XEUHBu+RsGQhCrubtRfAiw1+YuksI0Sd9ih25RfOLpVMIU2oShy69TFSI3PKIghErBYtZGvHv8wa0pNSHlKk3kqYS89FEs9Y0Ck7+TRBPr8uCZyHPGyw2WewCW6xAoQyjVFGpx0AZjTCRE0GSoDhOIuJJmIORS2SOGS5Mn8VTLCrDMTfB1cRNFAnMM4yf5uE7EKHu4humQXCWd+/8THXdeR8FY2feNB6QrggTdYTpJrQgl1ULI9qNbTPv+itDRkVEvvoHZtyBWAm8XdJay3WDKZsHU+6pKYm3dfbWyqAjKiWM33rynLuhLlaZzU5wfIp6lVhUbhNPfzoN000F6qRMnkYjKrKsAlI3gcdUXEEQ7dFOhzTsmt2zoWaTZqc2akG7RiwfkIBHvHbXFBQFinL3OAWeOppVlv3gn6UbC9rfNdccnw8iB2bZl/f36j/p6iPehh38UQK/LdyxzjEbXobG4WXY05eh29o2+R6szNkNgHN0wfJl+BQqGb2/WmX4I7y5A8MSeLLgt47zBm9aB2/uqTfdra9Sp70y5ykdBXH87KTirT8DpRLZr9f1ljQlA/fZxI7q+C8zQf1lfUjs44eL1uDm7Gv9mPQG98PT5mDYqU9t1X24EveDk5fhuHN0F7Snk+AK1nj9b5T4iHuzg3ol8H6uXeX2+mKLphvuDzncnz27P0+/ATbeU94VDwAA</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=9b311cd583ec7210a07896d6feaad3b3"/>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=108176a083e03210a07896d6feaad373"/>
@@ -523,7 +523,7 @@
         <description>Automatically assigns new incidents based on skills and workload.</description>
         <flow_priority>MEDIUM</flow_priority>
         <internal_name>incident_auto_assignment_flow</internal_name>
-        <label_cache>[{"name":"e9e77014-494a-4027-b5a6-03faefcd0d68.recommended_assignee.user_name","label":"1 - Find and Assign Best Assignee➛recommended_assignee➛User ID","reference":"","reference_display":"User ID","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"user_name","usedInstances":{}},{"name":"Created or Updated_1.current.sys_id","label":"Trigger - Record Created or Updated➛Incident Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1259673_intell_0_incident","column_name":"sys_id","choices":[{"order":0.0}],"usedInstances":{"e9e77014-494a-4027-b5a6-03faefcd0d68":["task_sys_id"]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Incident Record","reference":"x_1259673_intell_0_incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{"e9e77014-494a-4027-b5a6-03faefcd0d68":["task_sys_id","current_record"]},"attributes":{}},{"name":"e9e77014-494a-4027-b5a6-03faefcd0d68.recommended_assignee","label":"1 - Find and Assign Best Assignee➛recommended_assignee","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"cfbd1cc8-91ba-4ac7-a5db-156ef017dcda"}},{"name":"Created or Updated_1.current.number","label":"Trigger - Record Created or Updated➛Incident Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1259673_intell_0_incident","column_name":"number","usedInstances":{"800e290c-15da-4e19-9d1c-b0fd75012f93":["ah_message"]}},{"name":"e9e77014-494a-4027-b5a6-03faefcd0d68.recommended_assignee.first_name","label":"1 - Find and Assign Best Assignee➛recommended_assignee➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name","usedInstances":{}},{"name":"e9e77014-494a-4027-b5a6-03faefcd0d68.recommended_assignee.last_name","label":"1 - Find and Assign Best Assignee➛recommended_assignee➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"last_name","usedInstances":{}},{"name":"e9e77014-494a-4027-b5a6-03faefcd0d68.assignment_score","label":"1 - Find and Assign Best Assignee➛assignment_score","reference_display":"assignment_score","type":"integer","base_type":"integer","usedInstances":{"800e290c-15da-4e19-9d1c-b0fd75012f93":["ah_message"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"26f27bd3-9456-4ba1-9fd5-04b01ca518bc"}},{"name":"e9e77014-494a-4027-b5a6-03faefcd0d68.recommended_assignee.name","label":"1 - Find and Assign Best Assignee➛recommended_assignee➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name","usedInstances":{}},{"name":"e9e77014-494a-4027-b5a6-03faefcd0d68.recommended_assignee_name","label":"1 - Find and Assign Best Assignee➛recommended_assignee_name","type":"string","base_type":"string","usedInstances":{"800e290c-15da-4e19-9d1c-b0fd75012f93":["ah_message"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"c871da41-c1eb-4a23-9e1d-2ee4b1be2cae"}}]</label_cache>
+        <label_cache>[{"name":"e9e77014-494a-4027-b5a6-03faefcd0d68.recommended_assignee_name","label":"1 - Find and Assign Best Assignee➛recommended_assignee_name","reference_display":"recommended_assignee_name","type":"string","base_type":"string","usedInstances":{"800e290c-15da-4e19-9d1c-b0fd75012f93":["ah_message"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"c871da41-c1eb-4a23-9e1d-2ee4b1be2cae"}},{"name":"e9e77014-494a-4027-b5a6-03faefcd0d68.recommended_assignee.name","label":"1 - Find and Assign Best Assignee➛recommended_assignee➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name","usedInstances":{}},{"name":"e9e77014-494a-4027-b5a6-03faefcd0d68.assignment_score","label":"1 - Find and Assign Best Assignee➛assignment_score","reference_display":"assignment_score","type":"integer","base_type":"integer","usedInstances":{"800e290c-15da-4e19-9d1c-b0fd75012f93":["ah_message"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"26f27bd3-9456-4ba1-9fd5-04b01ca518bc"}},{"name":"e9e77014-494a-4027-b5a6-03faefcd0d68.recommended_assignee.last_name","label":"1 - Find and Assign Best Assignee➛recommended_assignee➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"last_name","usedInstances":{}},{"name":"e9e77014-494a-4027-b5a6-03faefcd0d68.recommended_assignee.first_name","label":"1 - Find and Assign Best Assignee➛recommended_assignee➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name","usedInstances":{}},{"name":"Created or Updated_1.current.number","label":"Trigger - Record Created or Updated➛Incident Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1259673_intell_0_incident","column_name":"number","usedInstances":{"800e290c-15da-4e19-9d1c-b0fd75012f93":["ah_message"]}},{"name":"e9e77014-494a-4027-b5a6-03faefcd0d68.recommended_assignee","label":"1 - Find and Assign Best Assignee➛recommended_assignee","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"cfbd1cc8-91ba-4ac7-a5db-156ef017dcda"}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Incident Record","reference":"x_1259673_intell_0_incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{"e9e77014-494a-4027-b5a6-03faefcd0d68":["task_sys_id","current_record"]},"attributes":{}},{"name":"Created or Updated_1.current.sys_id","label":"Trigger - Record Created or Updated➛Incident Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1259673_intell_0_incident","column_name":"sys_id","choices":[{"order":0.0}],"usedInstances":{"e9e77014-494a-4027-b5a6-03faefcd0d68":["task_sys_id"]}},{"name":"e9e77014-494a-4027-b5a6-03faefcd0d68.recommended_assignee.user_name","label":"1 - Find and Assign Best Assignee➛recommended_assignee➛User ID","reference":"","reference_display":"User ID","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"user_name","usedInstances":{}}]</label_cache>
         <master>true</master>
         <name>Incident Auto Assignment Flow</name>
         <natlang/>
@@ -540,7 +540,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7f62cb7483243210a07896d6feaad37f</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -548,7 +548,7 @@
         <sys_scope display_value="Intelligent Task Assignment">c568deec83203210a07896d6feaad304</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-11 13:36:49</sys_updated_on>
+        <sys_updated_on>2025-10-16 13:24:05</sys_updated_on>
         <type>flow</type>
         <version>2</version>
     </sys_hub_flow_snapshot>
@@ -716,14 +716,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-10 11:37:28</sys_created_on>
         <sys_id>7762cb7483243210a07896d6feaad393</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Intelligent Task Assignment">c568deec83203210a07896d6feaad304</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-11 13:36:48</sys_updated_on>
+        <sys_updated_on>2025-10-16 13:24:05</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -800,14 +800,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-10 11:37:28</sys_created_on>
         <sys_id>b762cb7483243210a07896d6feaad381</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Intelligent Task Assignment">c568deec83203210a07896d6feaad304</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-11 13:36:48</sys_updated_on>
+        <sys_updated_on>2025-10-16 13:24:05</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -980,18 +980,18 @@
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"8c72cb7483243210a07896d6feaad3aa","name":"plan","plan_signature":null}}</plan>
         <plan_id>108176a083e03210a07896d6feaad373</plan_id>
-        <snapshot>cb7ee01183a0b210a07896d6feaad3e3</snapshot>
+        <snapshot>7f62cb7483243210a07896d6feaad37f</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-10 11:37:29</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8c72cb7483243210a07896d6feaad3aa</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-11 13:36:49</sys_updated_on>
-        <trigger display_value="">f557ac158360b210a07896d6feaad3e5</trigger>
+        <sys_updated_on>2025-10-16 13:24:06</sys_updated_on>
+        <trigger display_value="">3f02de7283a03210a07896d6feaad386</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=108176a083e03210a07896d6feaad373"/>
 </record_update>
