@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_template_predicate">
+    <sys_ux_composite_data_template_predicate action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="sysapproval_approver">approverDYNAMIC90d1921e5f510100a9ad2572f2b477fe^state=requested^EQ<item endquery="false" field="approver" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/>
+            <item display_value="Requested" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="requested"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <custom_condition/>
+        <custom_field_list/>
+        <field_list>due_date,sysapproval.short_description,sysapproval.number,sys_created_on</field_list>
+        <name>My Tasks</name>
+        <order/>
+        <predicate_bundle display_value="My Tasks - Task bundle">66d04119cfe0b21052638737c9204428</predicate_bundle>
+        <required_roles/>
+        <sys_class_name>sys_ux_composite_data_template_predicate</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-11 15:28:20</sys_created_on>
+        <sys_id>2ed041195de0b2106b2c351cecef7e24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My Tasks</sys_name>
+        <sys_package display_value="Intelligent Task Assignment" source="x_1259673_intell_0">c568deec83203210a07896d6feaad304</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Intelligent Task Assignment">c568deec83203210a07896d6feaad304</sys_scope>
+        <sys_update_name>sys_ux_composite_data_template_predicate_2ed041195de0b2106b2c351cecef7e24</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-11 15:28:20</sys_updated_on>
+        <table>sysapproval_approver</table>
+        <ux_template display_value="Custom Portal Landing - My Tasks template">66d0411934e0b2105ae34f8359be7325</ux_template>
+    </sys_ux_composite_data_template_predicate>
+</record_update>

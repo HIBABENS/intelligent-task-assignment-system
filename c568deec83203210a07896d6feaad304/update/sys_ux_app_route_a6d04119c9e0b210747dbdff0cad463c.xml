@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config/>
+        <description/>
+        <extension_point/>
+        <fields>searchContextConfigId</fields>
+        <icon/>
+        <interoperable>false</interoperable>
+        <name>Search Page</name>
+        <optional_parameters>searchTerm</optional_parameters>
+        <order>0</order>
+        <parent_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>search</route_type>
+        <screen_type display_value="Search Page">a6d0411967e0b2108bfd770faa485c49</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-11 15:28:20</sys_created_on>
+        <sys_id>a6d04119c9e0b210747dbdff0cad463c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Search Page</sys_name>
+        <sys_package display_value="Intelligent Task Assignment" source="x_1259673_intell_0">c568deec83203210a07896d6feaad304</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Intelligent Task Assignment">c568deec83203210a07896d6feaad304</sys_scope>
+        <sys_update_name>sys_ux_app_route_a6d04119c9e0b210747dbdff0cad463c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-11 15:28:20</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="delete_multiple" query="documentkey=a6d04119c9e0b210747dbdff0cad463c"/>
+</record_update>

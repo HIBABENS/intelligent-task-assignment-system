@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1259673_intell_0.AssignmentScorer</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>AssignmentScorer</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var AssignmentScorer = Class.create();
+AssignmentScorer.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    computeScore: function(userSysId, taskGr) {
+        var score = 0;
+
+        // 1) Skill match
+        var skillMatch = 0;
+        if (taskGr.requested_skill) {
+            var gr1 = new GlideRecord('x_1259673_intell_0_user_competency');
+            gr1.addQuery('user', userSysId);
+            gr1.addQuery('competency', taskGr.requested_skill);
+            gr1.query();
+            if (gr1.next()) {
+                skillMatch = (parseInt(gr1.level, 10) - 1) / 4.0; // normalize 1-5 -> 0-1
+            }
+        }
+		
+        // 2) Availability
+		var now = new GlideDateTime();
+        var available = true;
+        var av = new GlideRecord('x_1259673_intell_0_availability');
+        av.addQuery('user', userSysId);
+        av.addQuery('from', '<=', now);
+        av.addQuery('to', '>=', now);
+        av.query();
+        if (av.next()) available = false;
+        var availabilityScore = available ? 1 : 0;
+
+        // 3) Workload
+        var gr = new GlideAggregate('x_1259673_intell_0_incident');
+        gr.addQuery('assigned_to', userSysId);
+        gr.addQuery('state', '<', 7);
+        gr.addAggregate('COUNT');
+        gr.query();
+        var openCount = 0;
+        if (gr.next()) openCount = parseInt(gr.getAggregate('COUNT'), 10);
+        var workloadScore = Math.max(0, 1 - (openCount / 20.0));
+
+        // 4) Performance (dummy logic)
+        var perfScore = 0.5; // par défaut
+
+        // Weighted total
+        score = 50 * skillMatch + 20 * availabilityScore + 15 * workloadScore + 15 * perfScore;
+		
+        return Math.round(score);
+    },
+
+    findBestAssignee: function(taskGr) {
+        var candidates = [];
+        var ucomp = new GlideRecord('x_1259673_intell_0_user_competency');
+        ucomp.query();
+        while (ucomp.next()) {
+            var s = this.computeScore(ucomp.user.toString(), taskGr);
+            candidates.push({
+                user: ucomp.user.toString(),
+                score: s
+            });
+        }
+        if (candidates.length === 0) return null;
+        candidates.sort(function(a, b) {
+            return b.score - a.score;
+        });
+		
+        return candidates[0];
+    },
+
+    type: 'AssignmentScorer'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 15:09:46</sys_created_on>
+        <sys_id>a959a6e483a03210a07896d6feaad3e0</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>AssignmentScorer</sys_name>
+        <sys_package display_value="Intelligent Task Assignment" source="x_1259673_intell_0">c568deec83203210a07896d6feaad304</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Intelligent Task Assignment">c568deec83203210a07896d6feaad304</sys_scope>
+        <sys_update_name>sys_script_include_a959a6e483a03210a07896d6feaad3e0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-10 12:35:34</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_script_action">
+    <sysevent_script_action action="DELETE">
+        <active>true</active>
+        <condition_script/>
+        <description/>
+        <event_name>activate.life.cycle.migration</event_name>
+        <name>Run Assignment Script</name>
+        <order>100</order>
+        <script/>
+        <synchronous>false</synchronous>
+        <sys_class_name>sysevent_script_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 16:06:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>020636a883e03210a07896d6feaad374</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Run Assignment Script</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Intelligent Task Assignment" source="x_1259673_intell_0">c568deec83203210a07896d6feaad304</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Intelligent Task Assignment">c568deec83203210a07896d6feaad304</sys_scope>
+        <sys_update_name>sysevent_script_action_020636a883e03210a07896d6feaad374</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 16:06:30</sys_updated_on>
+    </sysevent_script_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Intelligent Task Assignment">c568deec83203210a07896d6feaad304</application>
+        <file_path/>
+        <instance_id>7d83fce11bae79d8fe1b43f4bd4bcb80</instance_id>
+        <instance_name>dev213330</instance_name>
+        <name>sysevent_script_action_020636a883e03210a07896d6feaad374</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_script_action"><sysevent_script_action action="INSERT_OR_UPDATE"><active>true</active><condition_script/><description/><event_name>activate.life.cycle.migration</event_name><name>Run Assignment Script</name><order>100</order><script/><synchronous>false</synchronous><sys_class_name>sysevent_script_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-10-09 16:06:30</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>020636a883e03210a07896d6feaad374</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Run Assignment Script</sys_name><sys_overrides/><sys_package display_value="Intelligent Task Assignment" source="x_1259673_intell_0">c568deec83203210a07896d6feaad304</sys_package><sys_policy/><sys_scope display_value="Intelligent Task Assignment">c568deec83203210a07896d6feaad304</sys_scope><sys_update_name>sysevent_script_action_020636a883e03210a07896d6feaad374</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-10-09 16:06:30</sys_updated_on></sysevent_script_action></record_update>]]></payload>
+        <payload_hash>-1351355254</payload_hash>
+        <record_name>Run Assignment Script</record_name>
+        <reverted_from/>
+        <source>c168deec83203210a07896d6feaad309</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 16:06:30</sys_created_on>
+        <sys_id>0b663ea883e03210a07896d6feaad37d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>199c9b955a70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 16:06:30</sys_updated_on>
+        <type>Script Action</type>
+        <update_guid>4b66f6ac56a032102370bcbd77e7a6ac</update_guid>
+        <update_guid_history>4b66f6ac56a032102370bcbd77e7a6ac:-1351355254</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 16:13:10</sys_created_on>
+        <sys_db_object display_value="" name="sysevent_script_action">sysevent_script_action</sys_db_object>
+        <sys_id>34e10b2f495f4a7bb331a890f571d509</sys_id>
+        <sys_metadata>020636a883e03210a07896d6feaad374</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Run Assignment Script</sys_name>
+        <sys_package display_value="Intelligent Task Assignment" source="x_1259673_intell_0">c568deec83203210a07896d6feaad304</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Intelligent Task Assignment">c568deec83203210a07896d6feaad304</sys_scope>
+        <sys_scope_delete display_value="">8dee0680000643fdb0e1e555f6971f11</sys_scope_delete>
+        <sys_update_name>sysevent_script_action_020636a883e03210a07896d6feaad374</sys_update_name>
+        <sys_update_version display_value="sysevent_script_action_020636a883e03210a07896d6feaad374">0b663ea883e03210a07896d6feaad37d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 16:13:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

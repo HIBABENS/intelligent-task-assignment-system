@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Task table schema" source="com.glide.task">a8bb217ef13322108bb2efdbde054c88</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 14:22:39</sys_created_on>
+        <sys_id>b9ae9e2883603210a07896d6feaad339</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Intelligent Task Assignment" source="x_1259673_intell_0">c568deec83203210a07896d6feaad304</sys_package>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 14:22:39</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

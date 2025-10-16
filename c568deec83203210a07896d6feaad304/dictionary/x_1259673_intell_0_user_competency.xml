@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="a65b962483603210a07896d6feaad38a" label="User_Competency" max_length="40" name="x_1259673_intell_0_user_competency" type="collection">
+        <element label="competency" max_length="32" name="competency" reference="x_1259673_intell_0_competency" type="reference"/>
+        <element label="last_validate" max_length="40" name="last_validate" type="glide_date"/>
+        <element label="user" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="level" max_length="40" name="level" type="integer"/>
+        <index name="index">
+            <element name="competency"/>
+        </index>
+        <index name="index2">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

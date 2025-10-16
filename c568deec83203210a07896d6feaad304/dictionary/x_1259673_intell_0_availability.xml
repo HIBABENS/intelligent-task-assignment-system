@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c58b5a2483603210a07896d6feaad3c8" label="Availability" max_length="40" name="x_1259673_intell_0_availability" type="collection">
+        <element label="to" max_length="40" name="to" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="user" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <element label="from" max_length="40" name="from" type="glide_date"/>
+        <element label="type" max_length="40" name="type" type="string"/>
+        <index name="index">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

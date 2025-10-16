@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_app_config_theme">
+    <m2m_app_config_theme action="DELETE">
+        <applicability display_value="Public">ead04119c4e0b21091d1174759ff2857</applicability>
+        <order>0</order>
+        <sys_class_name>m2m_app_config_theme</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-11 15:28:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>aed04119afe0b2106567c9ca959be257</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Intelligent Task Assignment" source="x_1259673_intell_0">c568deec83203210a07896d6feaad304</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Intelligent Task Assignment">c568deec83203210a07896d6feaad304</sys_scope>
+        <sys_update_name>m2m_app_config_theme_aed04119afe0b2106567c9ca959be257</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-11 15:28:18</sys_updated_on>
+        <theme display_value="Light Theme">26d04119f6e0b210c8da1e40d96da258</theme>
+        <ux_app_configuration display_value="">aad04119b7e0b210ac18e338e4da9a14</ux_app_configuration>
+    </m2m_app_config_theme>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Intelligent Task Assignment">c568deec83203210a07896d6feaad304</application>
+        <file_path/>
+        <instance_id>7d83fce11bae79d8fe1b43f4bd4bcb80</instance_id>
+        <instance_name>dev213330</instance_name>
+        <name>m2m_app_config_theme_aed04119afe0b2106567c9ca959be257</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_app_config_theme"><m2m_app_config_theme action="INSERT_OR_UPDATE"><applicability display_value="Public">ead04119c4e0b21091d1174759ff2857</applicability><order>0</order><sys_class_name>m2m_app_config_theme</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-10-11 15:28:18</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>aed04119afe0b2106567c9ca959be257</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="Intelligent Task Assignment" source="x_1259673_intell_0">c568deec83203210a07896d6feaad304</sys_package><sys_policy/><sys_scope display_value="Intelligent Task Assignment">c568deec83203210a07896d6feaad304</sys_scope><sys_update_name>m2m_app_config_theme_aed04119afe0b2106567c9ca959be257</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-10-11 15:28:18</sys_updated_on><theme display_value="Light Theme">26d04119f6e0b210c8da1e40d96da258</theme><ux_app_configuration display_value="">aad04119b7e0b210ac18e338e4da9a14</ux_app_configuration></m2m_app_config_theme></record_update>]]></payload>
+        <payload_hash>-1767169208</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source/>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-11 17:12:50</sys_created_on>
+        <sys_id>92c899998364b210a07896d6feaad353</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>199d442c9ef0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-11 17:12:50</sys_updated_on>
+        <type>UX App Theme</type>
+        <update_guid>52c899997b64b210e6f8e254c57e0a53</update_guid>
+        <update_guid_history>52c899997b64b210e6f8e254c57e0a53:-1767169208</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">5ac899998364b210a07896d6feaad353</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-11 17:12:50</sys_created_on>
+        <sys_db_object display_value="" name="m2m_app_config_theme">m2m_app_config_theme</sys_db_object>
+        <sys_id>0edcfb5ddf804be69138c95776e15924</sys_id>
+        <sys_metadata>aed04119afe0b2106567c9ca959be257</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Intelligent Task Assignment" source="x_1259673_intell_0">c568deec83203210a07896d6feaad304</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Intelligent Task Assignment">c568deec83203210a07896d6feaad304</sys_scope>
+        <sys_scope_delete display_value="">8dee0680000643fdb0e1e555f6971f11</sys_scope_delete>
+        <sys_update_name>m2m_app_config_theme_aed04119afe0b2106567c9ca959be257</sys_update_name>
+        <sys_update_version display_value="m2m_app_config_theme_aed04119afe0b2106567c9ca959be257">92c899998364b210a07896d6feaad353</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-11 17:12:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

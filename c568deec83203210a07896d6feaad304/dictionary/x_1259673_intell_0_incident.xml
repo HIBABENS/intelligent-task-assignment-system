@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="f1ae9e2883603210a07896d6feaad326" extends="task" label="Incident" max_length="40" name="x_1259673_intell_0_incident" type="collection">
+        <element label="Recommended Assignee" max_length="32" name="recommended_assignee" reference="sys_user" type="reference"/>
+        <element label="Assignment Score" max_length="40" name="assignment_score" type="integer"/>
+        <element label="Model Version" max_length="40" name="model_version" type="string"/>
+        <element label="Requested Skill" max_length="32" name="requested_skill" reference="x_1259673_intell_0_competency" type="reference"/>
+    </element>
+</database>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_page_registry">
+    <sys_ux_page_registry action="DELETE">
+        <active>true</active>
+        <admin_panel>aad04119b7e0b210ac18e338e4da9a14</admin_panel>
+        <admin_panel_table>sys_ux_app_config</admin_panel_table>
+        <auth_routes>{"login":"login","logout": "login"}</auth_routes>
+        <page/>
+        <parent_app display_value="Portal UI Template Parent App">de0b852eb0c88210f8774b320398b357</parent_app>
+        <path>intelligent-task-assignment</path>
+        <root_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</root_macroponent>
+        <sys_class_name>sys_ux_page_registry</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-11 15:28:21</sys_created_on>
+        <sys_id>e6d04119c5e0b210491cf365b1938814</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Intelligent Task Assignment</sys_name>
+        <sys_package display_value="Intelligent Task Assignment" source="x_1259673_intell_0">c568deec83203210a07896d6feaad304</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Intelligent Task Assignment">c568deec83203210a07896d6feaad304</sys_scope>
+        <sys_update_name>sys_ux_page_registry_e6d04119c5e0b210491cf365b1938814</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-11 15:28:21</sys_updated_on>
+        <title>Intelligent Task Assignment</title>
+    </sys_ux_page_registry>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Intelligent Task Assignment">c568deec83203210a07896d6feaad304</application>
+        <file_path/>
+        <instance_id>7d83fce11bae79d8fe1b43f4bd4bcb80</instance_id>
+        <instance_name>dev213330</instance_name>
+        <name>sys_ux_page_registry_e6d04119c5e0b210491cf365b1938814</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_page_registry"><sys_ux_page_registry action="INSERT_OR_UPDATE"><active>true</active><admin_panel>aad04119b7e0b210ac18e338e4da9a14</admin_panel><admin_panel_table>sys_ux_app_config</admin_panel_table><auth_routes>{"login":"login","logout": "login"}</auth_routes><page/><parent_app display_value="Portal UI Template Parent App">de0b852eb0c88210f8774b320398b357</parent_app><path>intelligent-task-assignment</path><root_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</root_macroponent><sys_class_name>sys_ux_page_registry</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-10-11 15:28:21</sys_created_on><sys_id>e6d04119c5e0b210491cf365b1938814</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Intelligent Task Assignment</sys_name><sys_package display_value="Intelligent Task Assignment" source="x_1259673_intell_0">c568deec83203210a07896d6feaad304</sys_package><sys_policy/><sys_scope display_value="Intelligent Task Assignment">c568deec83203210a07896d6feaad304</sys_scope><sys_update_name>sys_ux_page_registry_e6d04119c5e0b210491cf365b1938814</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-10-11 15:28:21</sys_updated_on><title>Intelligent Task Assignment</title></sys_ux_page_registry></record_update>]]></payload>
+        <payload_hash>-1916924481</payload_hash>
+        <record_name>Intelligent Task Assignment</record_name>
+        <reverted_from/>
+        <source/>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-11 17:12:49</sys_created_on>
+        <sys_id>f9c859998364b210a07896d6feaad384</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>199d442c31b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-11 17:12:49</sys_updated_on>
+        <type>UX Application</type>
+        <update_guid>b9c859992c64b210b5552a9887e8bf84</update_guid>
+        <update_guid_history>b9c859992c64b210b5552a9887e8bf84:-1916924481</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-11 17:12:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_registry">sys_ux_page_registry</sys_db_object>
+        <sys_id>0dd29a24539747dd8a38b32ab79f7559</sys_id>
+        <sys_metadata>e6d04119c5e0b210491cf365b1938814</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Intelligent Task Assignment</sys_name>
+        <sys_package display_value="Intelligent Task Assignment" source="x_1259673_intell_0">c568deec83203210a07896d6feaad304</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Intelligent Task Assignment">c568deec83203210a07896d6feaad304</sys_scope>
+        <sys_scope_delete display_value="">8dee0680000643fdb0e1e555f6971f11</sys_scope_delete>
+        <sys_update_name>sys_ux_page_registry_e6d04119c5e0b210491cf365b1938814</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_registry_e6d04119c5e0b210491cf365b1938814">f9c859998364b210a07896d6feaad384</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-11 17:12:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
