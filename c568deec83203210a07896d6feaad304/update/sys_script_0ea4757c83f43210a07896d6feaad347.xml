@@ -69,7 +69,7 @@
         var r = new sn_ws.RESTMessageV2();
         r.setHttpMethod("post");
         r.setEndpoint("https://api-inference.huggingface.co/models/typeform/distilbert-base-uncased-mnli");
-       // r.setRequestHeader("Authorization", "Bearer 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");
+        r.setRequestHeader("Authorization", "Bearer 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");
         r.setRequestHeader("Content-Type", "application/json");
         r.setRequestBody(bodyStr);
 
@@ -174,7 +174,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0ea4757c83f43210a07896d6feaad347</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>AI Incident Categorization</sys_name>
         <sys_overrides/>
         <sys_package display_value="Intelligent Task Assignment" source="x_1259673_intell_0">c568deec83203210a07896d6feaad304</sys_package>
@@ -182,7 +182,7 @@
         <sys_scope display_value="Intelligent Task Assignment">c568deec83203210a07896d6feaad304</sys_scope>
         <sys_update_name>sys_script_0ea4757c83f43210a07896d6feaad347</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-28 15:54:40</sys_updated_on>
+        <sys_updated_on>2025-10-28 16:01:18</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
