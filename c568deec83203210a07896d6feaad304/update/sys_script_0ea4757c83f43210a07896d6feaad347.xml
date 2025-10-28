@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>incident</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="incident">short_descriptionISNOTEMPTY^EQ<item endquery="false" field="short_description" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>AI Incident Categorization</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    try {
+        gs.info("]]>🚀<![CDATA[ Business Rule triggered for incident: " + current.number);
+
+        // Build the input text safely
+        var shortDesc = current.short_description ? current.short_description.toString() : "";
+        var desc = current.description ? current.description.toString() : "";
+        var inputText = (shortDesc + " " + desc).trim();
+
+        if (!inputText) {
+            gs.warn("⚠️ No text to classify.");
+            return;
+        }
+
+        // Candidate labels for your incident categories
+        var candidateLabels = [
+            "Network",
+            "Hardware",
+            "Software",
+            "Email",
+            "Access",
+            "Security"
+        ];
+
+        // Create the JSON body
+        var bodyObj = {
+            "inputs": inputText,
+            "parameters": {
+                "candidate_labels": candidateLabels
+            }
+        };
+
+        var bodyStr = JSON.stringify(bodyObj);
+        gs.info("]]>📦<![CDATA[ Sending body: " + bodyStr);
+
+        // REST call
+        var r = new sn_ws.RESTMessageV2();
+        r.setHttpMethod("post");
+        r.setEndpoint("https://api-inference.huggingface.co/models/typeform/distilbert-base-uncased-mnli");
+       // r.setRequestHeader("Authorization", "Bearer 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");
+        r.setRequestHeader("Content-Type", "application/json");
+        r.setRequestBody(bodyStr);
+
+        var response = r.execute();
+        var status = response.getStatusCode();
+        var responseBody = response.getBody();
+
+        gs.info("]]>📡<![CDATA[ HTTP Status: " + status);
+        gs.info("]]>🧠<![CDATA[ Response: " + responseBody);
+
+        if (status != 200) {
+            gs.error("❌ Hugging Face API error: " + responseBody);
+            return;
+        }
+
+        var result = JSON.parse(responseBody);
+
+        gs.info("]]>🧠<![CDATA[ result: " + result);
+		
+        if (result && result.labels && result.scores) {
+            var topLabel = result.labels[0];
+            var confidence = result.scores[0];
+
+            current.ai_category = topLabel + " (" + confidence.toFixed(2) + ")";
+            current.setWorkflow(false);
+            current.update();
+
+            gs.info("✅ Categorized as: " + topLabel + " (" + confidence.toFixed(2) + ")");
+        }
+
+    } catch (e) {
+        gs.error("]]>💥<![CDATA[ Exception: " + e.message);
+    }
+
+
+    /*
+     gs.info("]]>🚀<![CDATA[ Business Rule triggered for incident: " + current.number);
+    	if (!current.short_description) return;
+
+      var ai = new AIIncidentClassifier();
+
+      var text = current.short_description.getDisplayValue();
+
+      if (current.description) text += '\n' + current.description.getDisplayValue();
+
+      var candidateLabels = ["Network","Hardware","Software","Access","Email","Database","Other"];
+      var result = ai.classifyText(text, candidateLabels);
+
+      // log basics
+      var conf = 0;
+      var topLabel = null;
+      if (result && result.body && result.body.labels && result.body.scores) {
+        topLabel = result.body.labels[0];
+        conf = parseFloat(result.body.scores[0]) || 0;
+      }
+
+      // insert log
+      var log = new GlideRecord('x_1259673_intell_0_ai_classification_log');
+      log.initialize();
+      log.incident = current.sys_id;
+      log.request = JSON.stringify({ text: text, candidates: candidateLabels });
+      log.response = JSON.stringify(result.body);
+      log.label = topLabel;
+      log.confidence = conf;
+      log.status = result.status;
+      log.insert();
+
+      var CONF_THRESHOLD = 0.75;
+      if (conf >= CONF_THRESHOLD && topLabel) {
+        var map = ai.mapLabelToSN(topLabel);
+        if (map && map.category_sys_id) {
+          // update incident (note: current is async; updating safely)
+          var inc = new GlideRecord('incident');
+          if (inc.get(current.sys_id)) {
+            inc.category = map.category_sys_id;
+            if (map.subcategory) inc.subcategory = map.subcategory;
+            if (map.assignment_group_sys_id) inc.assignment_group = map.assignment_group_sys_id;
+            inc.work_notes = (inc.work_notes || '') + '\nAI: auto-categorized to ' + topLabel + ' (conf ' + conf + ')';
+            inc.update();
+          }
+        } else {
+          // If no mapping found, write suggestion as work note
+          var inc2 = new GlideRecord('incident');
+          if (inc2.get(current.sys_id)) {
+            inc2.work_notes = (inc2.work_notes || '') + '\nAI suggestion: ' + topLabel + ' (conf ' + conf + ') — mapping missing';
+            inc2.update();
+          }
+        }
+      } else {
+        // low confidence: only suggestion
+        var inc3 = new GlideRecord('incident');
+        if (inc3.get(current.sys_id)) {
+          inc3.work_notes = (inc3.work_notes || '') + '\nAI suggestion: ' + (topLabel || 'N/A') + ' (conf ' + conf + '). Please review.';
+          inc3.update();
+        }
+      }*/
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-22 16:14:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0ea4757c83f43210a07896d6feaad347</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>AI Incident Categorization</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Intelligent Task Assignment" source="x_1259673_intell_0">c568deec83203210a07896d6feaad304</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Intelligent Task Assignment">c568deec83203210a07896d6feaad304</sys_scope>
+        <sys_update_name>sys_script_0ea4757c83f43210a07896d6feaad347</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-28 15:54:40</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=0ea4757c83f43210a07896d6feaad347"/>
+</record_update>

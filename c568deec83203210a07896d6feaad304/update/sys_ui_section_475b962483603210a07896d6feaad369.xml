@@ -4,41 +4,41 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-10 10:33:57</sys_created_on>
-            <sys_id>11e372b083e03210a07896d6feaad3c8</sys_id>
+            <sys_created_on>2025-10-20 17:15:06</sys_created_on>
+            <sys_id>839fefcc83fcb210a07896d6feaad35b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1259673_intell_0_user_competency" sys_domain="global" view="Default view">475b962483603210a07896d6feaad369</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-10 10:33:57</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>competency</element>
-            <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-10 10:33:57</sys_created_on>
-            <sys_id>59e3b2b083e03210a07896d6feaad3cd</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1259673_intell_0_user_competency" sys_domain="global" view="Default view">475b962483603210a07896d6feaad369</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-10 10:33:57</sys_updated_on>
+            <sys_updated_on>2025-10-20 17:15:06</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>user</element>
-            <position>2</position>
+            <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-10 10:33:57</sys_created_on>
-            <sys_id>dde3b2b083e03210a07896d6feaad3cd</sys_id>
+            <sys_created_on>2025-10-20 17:15:06</sys_created_on>
+            <sys_id>0b9fefcc83fcb210a07896d6feaad35b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1259673_intell_0_user_competency" sys_domain="global" view="Default view">475b962483603210a07896d6feaad369</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-10 10:33:57</sys_updated_on>
+            <sys_updated_on>2025-10-20 17:15:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>competency</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-10-20 17:15:06</sys_created_on>
+            <sys_id>8f9fefcc83fcb210a07896d6feaad35b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1259673_intell_0_user_competency" sys_domain="global" view="Default view">475b962483603210a07896d6feaad369</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-10-20 17:15:06</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>level</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-10 10:33:57</sys_created_on>
-            <sys_id>55e3b2b083e03210a07896d6feaad3ce</sys_id>
+            <sys_created_on>2025-10-20 17:15:06</sys_created_on>
+            <sys_id>079fefcc83fcb210a07896d6feaad35c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1259673_intell_0_user_competency" sys_domain="global" view="Default view">475b962483603210a07896d6feaad369</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-10 10:33:57</sys_updated_on>
+            <sys_updated_on>2025-10-20 17:15:06</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="58de8df883343210a07896d6feaad33b" label="ai_classification_log" max_length="40" name="x_1259673_intell_0_ai_classification_log" type="collection">
+        <element label="status" max_length="40" name="status" type="string"/>
+        <element label="incident" max_length="32" name="incident" reference="incident" type="reference"/>
+        <element label="label" max_length="40" name="label" type="string"/>
+        <element label="request" max_length="40" name="request" type="string"/>
+        <element label="confidence" max_length="20" name="confidence" type="decimal"/>
+        <element label="response" max_length="40" name="response" type="string"/>
+        <index name="index">
+            <element name="incident"/>
+        </index>
+    </element>
+</database>

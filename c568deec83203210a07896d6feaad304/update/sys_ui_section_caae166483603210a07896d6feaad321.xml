@@ -4,13 +4,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-10 11:14:14</sys_created_on>
-            <sys_id>971d7abc83e03210a07896d6feaad333</sys_id>
+            <sys_created_on>2025-10-20 17:12:40</sys_created_on>
+            <sys_id>db0fa3cc83fcb210a07896d6feaad31a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1259673_intell_0_incident" sys_domain="global" view="Default view">caae166483603210a07896d6feaad321</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-10 11:14:14</sys_updated_on>
+            <sys_updated_on>2025-10-20 17:12:40</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,209 +18,167 @@
             <element>assigned_to</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-10 11:14:14</sys_created_on>
-            <sys_id>1f1d7abc83e03210a07896d6feaad333</sys_id>
+            <sys_created_on>2025-10-20 17:12:40</sys_created_on>
+            <sys_id>d70fa3cc83fcb210a07896d6feaad31b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1259673_intell_0_incident" sys_domain="global" view="Default view">caae166483603210a07896d6feaad321</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-10 11:14:14</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>cmdb_ci</element>
-            <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-10 11:14:14</sys_created_on>
-            <sys_id>931d7abc83e03210a07896d6feaad334</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1259673_intell_0_incident" sys_domain="global" view="Default view">caae166483603210a07896d6feaad321</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-10 11:14:14</sys_updated_on>
+            <sys_updated_on>2025-10-20 17:12:40</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>active</element>
-            <position>3</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-10 11:14:14</sys_created_on>
-            <sys_id>1b1d7abc83e03210a07896d6feaad334</sys_id>
+            <sys_created_on>2025-10-20 17:12:40</sys_created_on>
+            <sys_id>5f0fa3cc83fcb210a07896d6feaad31b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1259673_intell_0_incident" sys_domain="global" view="Default view">caae166483603210a07896d6feaad321</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-10 11:14:14</sys_updated_on>
+            <sys_updated_on>2025-10-20 17:12:40</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>4</position>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-10 11:14:14</sys_created_on>
-            <sys_id>9f1d7abc83e03210a07896d6feaad334</sys_id>
+            <sys_created_on>2025-10-20 17:12:40</sys_created_on>
+            <sys_id>d30fa3cc83fcb210a07896d6feaad31c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1259673_intell_0_incident" sys_domain="global" view="Default view">caae166483603210a07896d6feaad321</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-10 11:14:14</sys_updated_on>
+            <sys_updated_on>2025-10-20 17:12:40</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>priority</element>
-            <position>5</position>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-10 11:14:14</sys_created_on>
-            <sys_id>171d7abc83e03210a07896d6feaad335</sys_id>
+            <sys_created_on>2025-10-20 17:12:40</sys_created_on>
+            <sys_id>5b0fa3cc83fcb210a07896d6feaad31c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1259673_intell_0_incident" sys_domain="global" view="Default view">caae166483603210a07896d6feaad321</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-10 11:14:14</sys_updated_on>
+            <sys_updated_on>2025-10-20 17:12:40</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>state</element>
-            <position>6</position>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-10 11:14:14</sys_created_on>
-            <sys_id>9b1d7abc83e03210a07896d6feaad335</sys_id>
+            <sys_created_on>2025-10-20 17:12:40</sys_created_on>
+            <sys_id>970fa3cc83fcb210a07896d6feaad329</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1259673_intell_0_incident" sys_domain="global" view="Default view">caae166483603210a07896d6feaad321</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-10 11:14:14</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>parent</element>
-            <position>7</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-10 11:14:14</sys_created_on>
-            <sys_id>131d7abc83e03210a07896d6feaad336</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1259673_intell_0_incident" sys_domain="global" view="Default view">caae166483603210a07896d6feaad321</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-10 11:14:14</sys_updated_on>
+            <sys_updated_on>2025-10-20 17:12:40</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>8</position>
+            <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-10 11:14:14</sys_created_on>
-            <sys_id>971d7abc83e03210a07896d6feaad336</sys_id>
+            <sys_created_on>2025-10-20 17:12:40</sys_created_on>
+            <sys_id>1f0fa3cc83fcb210a07896d6feaad329</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1259673_intell_0_incident" sys_domain="global" view="Default view">caae166483603210a07896d6feaad321</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-10 11:14:14</sys_updated_on>
+            <sys_updated_on>2025-10-20 17:12:40</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>short_description</element>
-            <position>9</position>
+            <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-10 11:14:14</sys_created_on>
-            <sys_id>1f1d7abc83e03210a07896d6feaad336</sys_id>
+            <sys_created_on>2025-10-20 17:12:40</sys_created_on>
+            <sys_id>930fa3cc83fcb210a07896d6feaad32a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1259673_intell_0_incident" sys_domain="global" view="Default view">caae166483603210a07896d6feaad321</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-10 11:14:14</sys_updated_on>
+            <sys_updated_on>2025-10-20 17:12:40</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>description</element>
-            <position>10</position>
+            <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-10 11:14:14</sys_created_on>
-            <sys_id>931d7abc83e03210a07896d6feaad337</sys_id>
+            <sys_created_on>2025-10-20 17:12:40</sys_created_on>
+            <sys_id>1b0fa3cc83fcb210a07896d6feaad32a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1259673_intell_0_incident" sys_domain="global" view="Default view">caae166483603210a07896d6feaad321</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-10 11:14:14</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>work_notes</element>
-            <position>11</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-10 11:14:14</sys_created_on>
-            <sys_id>1b1d7abc83e03210a07896d6feaad337</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1259673_intell_0_incident" sys_domain="global" view="Default view">caae166483603210a07896d6feaad321</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-10 11:14:14</sys_updated_on>
+            <sys_updated_on>2025-10-20 17:12:40</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>requested_skill</element>
-            <position>12</position>
+            <position>9</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-10 11:14:14</sys_created_on>
-            <sys_id>9f1d7abc83e03210a07896d6feaad337</sys_id>
+            <sys_created_on>2025-10-20 17:12:40</sys_created_on>
+            <sys_id>9f0fa3cc83fcb210a07896d6feaad32a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1259673_intell_0_incident" sys_domain="global" view="Default view">caae166483603210a07896d6feaad321</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-10 11:14:14</sys_updated_on>
+            <sys_updated_on>2025-10-20 17:12:40</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>recommended_assignee</element>
-            <position>13</position>
+            <position>10</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-10 11:14:14</sys_created_on>
-            <sys_id>db1d7abc83e03210a07896d6feaad344</sys_id>
+            <sys_created_on>2025-10-20 17:12:40</sys_created_on>
+            <sys_id>170fa3cc83fcb210a07896d6feaad32b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1259673_intell_0_incident" sys_domain="global" view="Default view">caae166483603210a07896d6feaad321</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-10 11:14:14</sys_updated_on>
+            <sys_updated_on>2025-10-20 17:12:40</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>assignment_score</element>
-            <position>14</position>
+            <position>11</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-10 11:14:14</sys_created_on>
-            <sys_id>531d7abc83e03210a07896d6feaad345</sys_id>
+            <sys_created_on>2025-10-20 17:12:40</sys_created_on>
+            <sys_id>9b0fa3cc83fcb210a07896d6feaad32b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1259673_intell_0_incident" sys_domain="global" view="Default view">caae166483603210a07896d6feaad321</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-10 11:14:14</sys_updated_on>
+            <sys_updated_on>2025-10-20 17:12:40</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>model_version</element>
-            <position>15</position>
+            <position>12</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-10 11:14:14</sys_created_on>
-            <sys_id>d71d7abc83e03210a07896d6feaad345</sys_id>
+            <sys_created_on>2025-10-20 17:12:40</sys_created_on>
+            <sys_id>130fa3cc83fcb210a07896d6feaad32c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1259673_intell_0_incident" sys_domain="global" view="Default view">caae166483603210a07896d6feaad321</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-10 11:14:14</sys_updated_on>
+            <sys_updated_on>2025-10-20 17:12:40</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

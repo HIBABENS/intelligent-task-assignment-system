@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="b720d17c83343210a07896d6feaad344" label="ai_feedback" max_length="40" name="x_1259673_intell_0_ai_feedback" type="collection">
+        <element label="Final label" max_length="40" name="final_label" type="string"/>
+        <element label="user" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <element label="comment" max_length="40" name="comment" type="string"/>
+        <element label="Suggested label" max_length="40" name="suggested_label" type="string"/>
+        <element label="incident" max_length="32" name="incident" reference="incident" type="reference"/>
+        <element label="accepted" max_length="40" name="accepted" type="boolean"/>
+        <index name="index">
+            <element name="incident"/>
+        </index>
+        <index name="index2">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

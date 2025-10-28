@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1259673_intell_0.AIIncidentClassifier</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>AIIncidentClassifier</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var AIIncidentClassifier = Class.create();
+AIIncidentClassifier.prototype = {
+    initialize: function() {},
+
+    classifyText: function(text, candidateLabelsArray) {
+        // build candidate labels JSON string
+        var labelsJson = JSON.stringify(candidateLabelsArray || ["Network", "Hardware", "Software", "Access", "Security", "Other"]);
+
+        try {
+            var rm = new sn_ws.RESTMessageV2('Incident Classification API', 'POST');
+            // set endpoint body directly (safe, no parameter substitution issues)
+            var bodyObj = {
+                inputs: text,
+                parameters: {
+                    candidate_labels: candidateLabelsArray,
+                    multi_label: false
+                }
+            };
+            rm.setRequestBody(JSON.stringify(bodyObj));
+
+            // execute
+            var response = rm.execute();
+            var httpStatus = response.getStatusCode();
+            var respBody = response.getBody();
+            var parsed;
+            try {
+                parsed = JSON.parse(respBody);
+            } catch (e) {
+                parsed = {
+                    error: 'invalid_json',
+                    raw: respBody
+                };
+            }
+
+            return {
+                status: httpStatus,
+                body: parsed
+            };
+        } catch (ex) {
+            gs.error('AIIncidentClassifier.classifyText error: ' + ex);
+            return {
+                status: 500,
+                error: ex.toString()
+            };
+        }
+    },
+
+    mapLabelToSN: function(label) {
+        // Map label to ServiceNow sys_ids using ai_label_map table
+        var gr = new GlideRecord('x_1259673_intell_0_ai_label_map');
+        gr.addQuery('label_name', label);
+        gr.query();
+        if (gr.next()) {
+            return {
+                category_sys_id: gr.category_sys_id + '',
+                subcategory: gr.subcategory + '',
+                assignment_group_sys_id: gr.assignment_group_sys_id + ''
+            };
+        }
+        return null;
+    },
+
+    type: 'AIIncidentClassifier'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-22 14:08:26</sys_created_on>
+        <sys_id>cac75df483743210a07896d6feaad3dd</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>AIIncidentClassifier</sys_name>
+        <sys_package display_value="Intelligent Task Assignment" source="x_1259673_intell_0">c568deec83203210a07896d6feaad304</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Intelligent Task Assignment">c568deec83203210a07896d6feaad304</sys_scope>
+        <sys_update_name>sys_script_include_cac75df483743210a07896d6feaad3dd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-22 17:34:52</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Intelligent Task Assignment">c568deec83203210a07896d6feaad304</application>
+        <file_path/>
+        <instance_id>7d83fce11bae79d8fe1b43f4bd4bcb80</instance_id>
+        <instance_name>dev213330</instance_name>
+        <name>sys_script_include_cac75df483743210a07896d6feaad3dd</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1259673_intell_0.AIIncidentClassifier&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;AIIncidentClassifier&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var AIIncidentClassifier = Class.create();
+AIIncidentClassifier.prototype = {
+    initialize: function() {},
+
+    classifyText: function(text, candidateLabelsArray) {
+        // build candidate labels JSON string
+        var labelsJson = JSON.stringify(candidateLabelsArray || ["Network", "Hardware", "Software", "Access", "Security", "Other"]);
+
+        try {
+            var rm = new sn_ws.RESTMessageV2('Incident Classification API', 'POST');
+            // set endpoint body directly (safe, no parameter substitution issues)
+            var bodyObj = {
+                inputs: text,
+                parameters: {
+                    candidate_labels: candidateLabelsArray,
+                    multi_label: false
+                }
+            };
+            rm.setRequestBody(JSON.stringify(bodyObj));
+
+            // execute
+            var response = rm.execute();
+            var httpStatus = response.getStatusCode();
+            var respBody = response.getBody();
+            var parsed;
+            try {
+                parsed = JSON.parse(respBody);
+            } catch (e) {
+                parsed = {
+                    error: 'invalid_json',
+                    raw: respBody
+                };
+            }
+
+            return {
+                status: httpStatus,
+                body: parsed
+            };
+        } catch (ex) {
+            gs.error('AIIncidentClassifier.classifyText error: ' + ex);
+            return {
+                status: 500,
+                error: ex.toString()
+            };
+        }
+    },
+
+    mapLabelToSN: function(label) {
+        // Map label to ServiceNow sys_ids using ai_label_map table
+        var gr = new GlideRecord('x_1259673_intell_0_ai_label_map');
+        gr.addQuery('label_name', label);
+        gr.query();
+        if (gr.next()) {
+            return {
+                category_sys_id: gr.category_sys_id + '',
+                subcategory: gr.subcategory + '',
+                assignment_group_sys_id: gr.assignment_group_sys_id + ''
+            };
+        }
+        return null;
+    },
+
+    type: 'AIIncidentClassifier'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-10-22 14:08:26&lt;/sys_created_on&gt;&lt;sys_id&gt;cac75df483743210a07896d6feaad3dd&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;AIIncidentClassifier&lt;/sys_name&gt;&lt;sys_package display_value="Intelligent Task Assignment" source="x_1259673_intell_0"&gt;c568deec83203210a07896d6feaad304&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Intelligent Task Assignment"&gt;c568deec83203210a07896d6feaad304&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_cac75df483743210a07896d6feaad3dd&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-10-22 17:34:52&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>403210300</payload_hash>
+        <record_name>AIIncidentClassifier</record_name>
+        <reverted_from/>
+        <source>c2b1167283a03210a07896d6feaad38f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-22 17:34:52</sys_created_on>
+        <sys_id>80570ab483783210a07896d6feaad36e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19a0cfce7a50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-22 17:34:52</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>84570ab4167832109ea0af920ab6526d</update_guid>
+        <update_guid_history>84570ab4167832109ea0af920ab6526d:403210300,2874317c38f4321092a24f5fedc0e850:402659843,f61d99389a743210676f2459d09c0225:-1416976793,94189df4d974321060943d8b69bff5c4:2011128325</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-23 09:14:58</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>4dbeeeee3a8f45029fb9a1203f15f524</sys_id>
+        <sys_metadata>cac75df483743210a07896d6feaad3dd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AIIncidentClassifier</sys_name>
+        <sys_package display_value="Intelligent Task Assignment" source="x_1259673_intell_0">c568deec83203210a07896d6feaad304</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Intelligent Task Assignment">c568deec83203210a07896d6feaad304</sys_scope>
+        <sys_scope_delete display_value="">8dee0680000643fdb0e1e555f6971f11</sys_scope_delete>
+        <sys_update_name>sys_script_include_cac75df483743210a07896d6feaad3dd</sys_update_name>
+        <sys_update_version display_value="sys_script_include_cac75df483743210a07896d6feaad3dd">80570ab483783210a07896d6feaad36e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-23 09:14:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

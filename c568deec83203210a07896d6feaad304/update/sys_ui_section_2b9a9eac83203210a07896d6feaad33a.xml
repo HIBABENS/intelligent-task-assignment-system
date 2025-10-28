@@ -4,41 +4,41 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-10 10:26:24</sys_created_on>
-            <sys_id>be223e7c83a03210a07896d6feaad388</sys_id>
+            <sys_created_on>2025-10-20 17:13:53</sys_created_on>
+            <sys_id>455f2bcc83fcb210a07896d6feaad3e2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1259673_intell_0_competency" sys_domain="global" view="Default view">2b9a9eac83203210a07896d6feaad33a</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-10 10:26:24</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>description</element>
-            <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-10 10:26:24</sys_created_on>
-            <sys_id>ba223e7c83a03210a07896d6feaad389</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1259673_intell_0_competency" sys_domain="global" view="Default view">2b9a9eac83203210a07896d6feaad33a</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-10 10:26:24</sys_updated_on>
+            <sys_updated_on>2025-10-20 17:13:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>name</element>
-            <position>2</position>
+            <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-10 10:26:24</sys_created_on>
-            <sys_id>32223e7c83a03210a07896d6feaad38a</sys_id>
+            <sys_created_on>2025-10-20 17:13:53</sys_created_on>
+            <sys_id>c95f2bcc83fcb210a07896d6feaad3e2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1259673_intell_0_competency" sys_domain="global" view="Default view">2b9a9eac83203210a07896d6feaad33a</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-10 10:26:24</sys_updated_on>
+            <sys_updated_on>2025-10-20 17:13:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-10-20 17:13:53</sys_created_on>
+            <sys_id>415f2bcc83fcb210a07896d6feaad3e3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1259673_intell_0_competency" sys_domain="global" view="Default view">2b9a9eac83203210a07896d6feaad33a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-10-20 17:13:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

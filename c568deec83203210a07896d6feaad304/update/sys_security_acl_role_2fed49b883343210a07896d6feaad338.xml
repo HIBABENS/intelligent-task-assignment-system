@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-22 13:24:09</sys_created_on>
+        <sys_id>2fed49b883343210a07896d6feaad338</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1259673_intell_0_ai_label_map.x_1259673_intell_0.ai_label_map_user</sys_name>
+        <sys_package display_value="Intelligent Task Assignment" source="x_1259673_intell_0">c568deec83203210a07896d6feaad304</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Intelligent Task Assignment">c568deec83203210a07896d6feaad304</sys_scope>
+        <sys_security_acl display_value="x_1259673_intell_0_ai_label_map">e7ed49b883343210a07896d6feaad333</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_2fed49b883343210a07896d6feaad338</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-22 13:24:09</sys_updated_on>
+        <sys_user_role display_value="x_1259673_intell_0.ai_label_map_user" name="x_1259673_intell_0.ai_label_map_user">9bedc5b883343210a07896d6feaad31b</sys_user_role>
+    </sys_security_acl_role>
+</record_update>
